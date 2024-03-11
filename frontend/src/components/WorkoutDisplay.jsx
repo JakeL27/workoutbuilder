@@ -39,7 +39,7 @@ function Questionnaire() {
     await delay(2000);
     try {
       const { data } = await axios.post(
-        "https://workoutbuilder-api.vercel.app/generate_workout",
+        "http://127.0.0.1:5000/generate_workout",
         { data: answers }
       );
       console.log(data);
