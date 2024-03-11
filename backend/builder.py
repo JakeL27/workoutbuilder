@@ -66,5 +66,3 @@ def routine_builder(days, focus, difficulty):
             workout_plan.append(day)
             
     return workout_plan
-
-print(routine_builder(5, 'strength', 'hard'))
