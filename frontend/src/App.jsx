@@ -18,7 +18,7 @@ function App() {
     setIsLoading(true);
     try {
       const response = await axios.post(
-        "http://localhost:5000/generate_workout",
+        "https://workoutbuilder-api.vercel.app/generate_workout",
         answers,
         {
           headers: { "Content-Type": "application/json" },
