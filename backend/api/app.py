@@ -3,7 +3,7 @@ from flask_cors import CORS
 from builder import MuscleGroup, build_workout_day, day_to_muscle_groups, routine_builder
 
 app = Flask(__name__)
-CORS(app, supports_credentials=True origins='https://workoutbuilder-frontend.vercel.app')
+CORS(app)
 @app.route('/generate_workout', methods=['POST'])
 def generate_workout():
     req = request.json
